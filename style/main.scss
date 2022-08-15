@@ -1,0 +1,151 @@
+@mixin container{
+    width: 375px;
+    margin: 0 auto;
+    padding: 10px;
+}
+@mixin text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #333D4B;
+}
+.roma_header{
+    background-color: rgb(245, 239, 155);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+   .container{
+      @include container;
+      .roma{
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        .roma_logo{
+           display: flex;
+           justify-content: space-between;
+           padding-left: 5px;
+           .roma_logo_img{
+            width: 50px;
+            height: 50px;
+            border-radius: 33px;
+            margin-top: 5px;
+           }
+           .roma_logo_title{
+            font-style: normal;
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 15px;
+            text-align: center;
+            color: #1c2128;
+            padding-left: 5px;
+            .roma_logo_title_span{
+              font-style: normal;
+              font-weight: 900;
+              font-size: 9px;
+              line-height: 32px;
+              text-align: center;
+              padding-left: 3px;
+              color: #dc724d;
+            }
+           }
+        }
+        .roma_link{
+          display: flex;
+          justify-content: space-between;
+          text-align: center;
+          align-items: center;
+          .roma_btn_one{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: rgb(221, 84, 84);
+
+          }
+          .roma_btn_one:hover{
+            background-color: rgb(58, 199, 190);
+            color: #1d1816;
+          }
+          .roma_btn_one:active{
+            background-color: rgb(227, 229, 69);
+            color: #843719;
+          }
+        }
+      }
+   }
+}
+.main{
+   padding-top: 70px;
+}
+.nav_section{
+   .container{
+      @include container;
+      .nav{
+        .nav_ul{
+          list-style: none;
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+            .nav_li{
+               padding-left: 15px;
+               .nav_li_link{
+                  text-decoration: none;
+                  @include text;
+                
+               }
+               .nav_li_link:hover{
+                  color: rgb(83, 83, 211);
+              }
+              
+            }
+            
+         }
+      }
+      
+   }
+}
+.intro_section{
+    .container{
+       @include container;
+       .intro{
+          width: 300px;
+          margin: 0 auto;
+          
+      }
+    }
+}
+
+.footer{
+background-color: rgb(245, 239, 155);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 5px 5px 10px 13px rgb(0 0 0 / 8%);
+  .container{
+     @include container;
+     .roma_footer{
+        display: flex;
+        justify-content: space-evenly;
+        .roma_item{
+           .footer_logo{
+             width: 20px;
+             height: 20px; 
+          }
+        }
+    }
+  }
+}
