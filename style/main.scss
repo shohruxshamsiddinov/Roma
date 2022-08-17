@@ -96,7 +96,7 @@
           list-style: none;
             width: 150px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             .nav_li{
                padding-left: 15px;
                .nav_li_link{
@@ -148,4 +148,237 @@ background-color: rgb(245, 239, 155);
         }
     }
   }
+}
+.aksiya_section{
+  padding-bottom: 10px;
+    .container{
+       @include container;
+       .aksiya{
+        width: 300px;
+    align-items: center;
+    padding-left: 40px;
+           .aksiya_title{
+            text-align: center;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 28px;
+              line-height: 15px;
+              color: #1c2128;
+          }
+          .aksiya_funk{
+            padding-left: 10px;
+            display: flex;
+               .aksiya_img{
+                 width: 150px;
+                 height: 200px;
+                border-radius: 15px;
+               }
+              .aksiya_img_div{
+                  padding-left: 10px;
+                  padding-top: 25px;
+                  .aksiya_title_1{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 19px;
+                    line-height: 18px;
+                    color: #1c2128;
+                  }
+                  .aksiya_text{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #333D4B;
+                  }
+                  .aksiya_link{
+                      padding: 4px;
+                      font-style: normal;
+                      font-weight: 700;
+                      font-size: 10px;
+                      line-height: 30px;
+                      text-align: center;
+                      color: #fff;
+                      text-decoration: none;
+                      border-radius: 15px;
+                      padding-left: 15px;
+                      padding-right: 15px;
+                      background-color: rgb(221, 84, 84);
+                    
+                  }
+                  .aksiya_link:hover{
+                    background-color: rgb(58, 199, 190);
+                    color: #1d1816;
+                  }
+                  .aksiya_link:active{
+                    background-color: rgb(227, 229, 69);
+                    color: #843719;
+                  }
+             }
+          }
+
+      }
+    }
+}
+.pizza_section{
+   .container{
+      @include container;
+     .pizza_all{
+      .pizza_title{
+          text-align: center;
+          .pizza_title_a{
+            text-align: center;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 21px;
+            line-height: 15px;
+            color: #1c2128;
+            text-decoration: none;
+          }
+      } 
+      .pizza_info{
+        margin: 0 auto;
+        padding-top: 10px;
+        display: flex;
+        width: 300px;
+        padding-left: 25px;
+        justify-content: space-evenly;
+          .pizza_item{
+            width: 100px;
+              .pizza_img{
+                margin-left: 25px;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+              }
+              
+              .pizza_text{
+                padding: 3px;
+                margin: 0 auto;
+                width: 70px;
+                .pizza_text_info{
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 6px;
+                  line-height: 10px;
+                  color: #333D4B;
+                  padding-left: 5px;
+                }
+              }
+              .pizza_span{
+                  text-align: center;
+                  .pizza_span_link{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 13px;
+                    color: #333D4B;
+                    text-decoration: none;
+                  }
+              }
+              .pizza_link{
+                  text-align: center;
+                  .pizza_link_a{
+                    padding: 2px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 9px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 15px;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    background-color: rgb(221, 84, 84);
+                  
+                }
+                .pizza_link_a:hover{
+                  background-color: rgb(58, 199, 190);
+                  color: #1d1816;
+                }
+                .pizza_link_a:active{
+                  background-color: rgb(227, 229, 69);
+                  color: #843719;
+                }
+              }
+            }
+          }  
+      }
+  }
+}
+.drink_section{
+  padding-bottom: 30px;
+   .container{
+      @include container;
+      .drink_all{
+        .drink_title{
+            text-align: center;
+            .drink_title_a{
+              text-align: center;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 21px;
+              line-height: 15px;
+              color: #1c2128;
+              text-decoration: none;
+            }
+        } 
+      .drink_info{
+        margin: 0 auto;
+        padding-top: 10px;
+        display: flex;
+        width: 300px;
+        padding-left: 25px;
+        justify-content: space-evenly;
+          .drink_item{
+            width: 100px;
+            padding-top: 10px;
+              .drink_img{
+                margin-left: 25px;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+              }
+             
+              .drink_span{
+                  text-align: center;
+                  .drink_span_link{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 13px;
+                    color: #333D4B;
+                    text-decoration: none;
+                  }
+              }
+              .drink_link{
+                  text-align: center;
+                  .drink_link_a{
+                    padding: 2px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 9px;
+                    line-height: 16px;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 15px;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    background-color: rgb(221, 84, 84);
+                  
+                }
+                .drink_link_a:hover{
+                  background-color: rgb(58, 199, 190);
+                  color: #1d1816;
+                }
+                .drink_link_a:active{
+                  background-color: rgb(227, 229, 69);
+                  color: #843719;
+                }
+              }
+          }
+      }
+  }
+ }
 }
